@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Transportes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #1f2933;
+            text-align: center;
+        }
+
+        nav {
+            background: #111827;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+            padding: 5PX O;
+        }
+
+        nav a:hover {
+            color: #f59e0b;
+        }
+
+        header {
+            background: #1f2933;
+            color: white;
+            padding: 60px 20px;
+
+        }
+header{border-bottom: 5px solid #f59e0b;}
+        header h1 {
+            font-size: 42px;
+            margin:0 0 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: 15px auto 0;
+            line-height: 1.5;
+        }
+
+        main {
+            padding: 50px 20px;
+            background: white;
+        }
+
+        main h2 {
+            font-size: 32px;
+        }
+
+        main p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        button {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.2;
+        }button:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+}
+
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            font-size: 30px;
+        }#sobre {
+    background: #f4f6f8;
+    #sobre h2 {
+    margin-bottom: 25px;
+}
+}
+
+#sobre p {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+        section p {
+            background: white;
+            max-width: 600px;
+            margin: 15px auto;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .servicos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+    transition: 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+            transition: transform 0.2s;
+            box-shadow: 0.2s;
+            .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+        }
+
+        .card h3 {
+            font-size: 21px;
+            margin-top: 0;
+        }
+
+        .card p {
+            background: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        .imagem-principal {
+            max-width: 500px;
+            width: 90%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .frota {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .frota img {
+            width: 320px;
+            height: 230px;
+            transition: transfom 0.2s;
+            object-fit: contain;
+            border: 1px solid #e5e7eb;
+            background: white;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+.frota img:hover{ transform: scale(1.03);}
+
+        .contato {
+            background: #1f2933;
+            color: white;
+            padding: 50px 20px;
+            border-top: 5px solid #f59e0b;
+            text-align: center;
+        }
+
+        .contato p {
+            background: none;
+            max-width: none;
+        }
+
+       .contato button {
+    margin-top: 15px;
+    padding: 16px 35px;
+    font-size: 18px;
+}
+
+        
+
+        footer {
+            background: #111827;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            background: none;
+            margin: 5px;
+            padding: 0;
+        }@media (max-width: 600px) {
+    nav a {
+        margin: 5px 6px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .frota img {
+        width: 90%;
+        height: auto;
+    }
+
+    .card {
+        width: 90%;
+    }
+    button{max-width: 90%;}
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#frota">Frota</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <header id="inicio">
+        <h1>Felipe Transportes</h1>
+        <p>Transporte com segurança, compromisso e confiança.</p>
+    </header>
+
+    <main>
+        <h2>Transporte seguro para levar seu negócio mais longe</h2>
+
+        <img src="Logan.png" alt="Logan - Felipe Transportes" class="imagem-principal">
+
+        <p>
+    Transporte de cargas e mercadorias com segurança,
+    responsabilidade e compromisso.
+</p>
+
+        <a href="https://wa.me/5512996098807?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20transporte." target="_blank">
+            <button>Solicitar orçamento pelo WhatsApp</button>
+        </a>
+    </main>
+    <section id="sobre">
+    <h2>Sobre a Felipe Transportes</h2>
+    <p><strong>Segurança, compromisso e confiança em cada transporte.</strong></p>
+
+    <p>
+        A Felipe Transportes atua no transporte de cargas e mercadorias,
+        oferecendo soluções com segurança, responsabilidade e compromisso.
+        Nosso objetivo é atender empresas e clientes com um serviço eficiente,
+        confiável e de qualidade.
+    </p>
+</section>
+
+    <section id="servicos">
+        <h2>Nossos serviços</h2>
+
+        <div class="servicos">
+
+            <div class="card">
+                <h3>Transporte de cargas</h3>
+                <p>Transporte com segurança, responsabilidade e compromisso.</p>
+            </div>
+
+            <div class="card">
+                <h3>Transporte para empresas</h3>
+                <p>Soluções de transporte para atender às necessidades da sua empresa.</p>
+            </div>
+
+            <div class="card">
+                <h3>Transporte de mercadorias</h3>
+                <p>Cuidado e responsabilidade no transporte de suas mercadorias.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="frota">
+        <h2>Nossa frota</h2>
+<p>
+    Frota preparada para realizar o transporte de cargas
+    com segurança, eficiência e responsabilidade.
+</p>
+        <div class="frota">
+
+            <img src="Amarelo.jpeg" alt="Caminhão amarelo">
+
+            <img src="Dupla.jpg" alt="Dois caminhões">
+
+            <img src="Iveco.jpeg" alt="Caminhão Iveco">
+
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em contato</h2>
+
+        <p>Precisa de transporte? Fale com a Felipe Transportes.</p>
+
+        <p><strong>WhatsApp</strong><br>(12) 99609-8807</p>
+
+        <a href="https://wa.me/5512996098807?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20transporte." target="_blank">
+            <button>Falar pelo WhatsApp</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Felipe Transportes</p>
+        <p>Transporte com segurança, compromisso e confiança.</p>
+    </footer>
+
+</body>
+</html>
